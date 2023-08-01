@@ -12,7 +12,11 @@
     <div class="navbar">
         <h4>4D</h4>
     </div>
-    <div class ="container"></div>
+    <div class ="container">
+        <a href="#" class="item -item1"> <img src="../Brazil.png"><h4>Camisa do Brasil masculina</h4></a>
+        <a href="#" class="item -item2"></a>
+        <a href="#" class="item -item3"></a>
+    </div>
     
 </body>
 </html>
