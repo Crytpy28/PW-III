@@ -10,12 +10,17 @@
 </head>
 <body>
     <div class="navbar">
-        <h4>4D</h4>
+       <img src="../hip.png">
+    <text>
+       <?php
+       echo "Faça login"
+       ?>
+</text>
     </div>
     <div class ="container">
-        <a href="#" class="item -item1"> <img src="../Brazil.png"><h4>Camisa do Brasil masculina</h4></a>
-        <a href="#" class="item -item2"></a>
-        <a href="#" class="item -item3"></a>
+        <a href="CamisadoBrasil.php" class="item -item1"> <img src="../Brazil.png"><h4>Camisa do Brasil masculina</h4></a>
+        <a href="#" class="item -item2"><img src="../franca.png"><h4>Camisa da França unisex</h4></a>
+        <a href="#" class="item -item3"><img src="../holanda.png"><h4>Camisa da Holanda masculina</h4></a>
     </div>
     
 </body>
