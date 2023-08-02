@@ -12,8 +12,12 @@
     <img src="../hip.png">
     </div>
     <div class="container">
+        <div class="sq">  
+        <img src="../Brazil.png"><label>Camisa do Brasil 2022 canarinho masculina</label></div>
+        <div class="sq"></div>
+        
     <div class= "product">
-        <img src="../Brazil.png">
+        
 
     </div>
 </div>
