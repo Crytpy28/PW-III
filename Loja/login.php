@@ -5,6 +5,7 @@
   <link href="Styles/Loginstyles.css" rel="stylesheet">
 </head>
 <body>
+ <img src="../stadium.png">
 <div class="navbar">
  <img src="../hip.png">
   <div class="container">

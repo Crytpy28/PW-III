@@ -12,10 +12,10 @@
     <div class="navbar">
        <img src="../hip.png">
     <text>
-       <?php
-       echo "Faça login"
-       ?>
-</text>
+        <?php
+            echo "Faça login"
+        ?>
+    </text>
     </div>
     <div class ="container">
         <a href="CamisadoBrasil.php" class="item -item1"> <img src="../Brazil.png"><h4>Camisa do Brasil masculina</h4></a>
