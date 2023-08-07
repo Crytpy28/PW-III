@@ -1,10 +1,12 @@
 :root{
     --green: rgb(26, 95, 26);
     --BL: rgb(24, 24, 24);
+    --WT: white;
 }
 
 body{
     background-color: var(--BL);
+    overflow:hidden ;
 }
 
 .navbar{
@@ -20,43 +22,104 @@ body{
 
 .navbar img{
     height: 100%;
-    pointer-events: none;
+    
 }
 
 .navbar text{
-    color: white;
+    color: var(--WT);
     float: right;
 }
 
-.container{
+.container img{
     align-items: center;
     display: flex;
-    gap: 10;
+    max-height: 70%;
+    border: solid rgb(150, 150, 150) .7px;
 }
 
+.box{
+    display: flex;
+    vertical-align: baseline;
+}
 .sq{
     margin-top: 10%;
-    margin-right: 10%;
-    text-align: center;
-    align-items: center;
     display: flex;
     position: relative;
-    background-color: white;
+    background-color: var(--WT);
     border-radius: 5px;
-}
-
-.sq img{
-    height: 50%;
-    width: 50%;
+    padding: 10px;
 }
 
 .sq:first-child{
-    height: 45em;
-    width: 60em;
+    text-align: center;
+    height: 27em;
+    width: 40em;
     margin-right: 10px;
     margin-left: 10%;
 }
 
-label{
-     
+.sq:last-child{
+    width: 25em;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.sq label.name{
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: 65px;
+    margin-right: 50px;
+    position: absolute;
+    color:rgb(116, 116, 116);
+    font-family:Arial, Helvetica, sans-serif;
+}
+p{
+    
+    color:rgb(116, 116, 116);
+    text-align: left;
+    align-items: center;
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 75px;
+    margin-right: 20px;
+}
+
+label.price{
+    display: flex;
+    
+    margin-top: 10px;
+    font-size: 2rem;
+    color:rgb(53, 53, 53);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.sq input {
+    display: flex;
+    position: absolute;
+    bottom:50px;
+    border: none;
+    background-color: var(--green);
+    width: 220px;
+    height: 40px;
+    border-radius: 4px;
+    opacity: .85;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sq input:hover{
+    opacity: 1;
+
+    width: 240px;
+    transition: 0.3s;
 }

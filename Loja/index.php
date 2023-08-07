@@ -1,3 +1,8 @@
+<?php 
+    session_start(); 
+    include("conexao.php");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -12,9 +17,10 @@
     <div class="navbar">
        <img src="../hip.png">
     <text>
+        <a href="login.php">
         <?php
             echo "Faça login"
-        ?>
+        ?></a>
     </text>
     </div>
     <div class ="container">

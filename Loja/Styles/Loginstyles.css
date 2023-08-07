@@ -68,7 +68,8 @@ body {
   margin: 40px 0 50px;
 }
 
-.input {
+input[type="text"],
+input[type="password"]{
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.75);
   background-color: rgba(0, 0, 0, 0.75);
@@ -81,7 +82,8 @@ body {
   font-family: 'Candara', sans-serif;
 }
 
-.button {
+input[type="button"] {
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,19 +91,15 @@ body {
   height: 50px;
   border-radius: 100px;
   background-color: rgb(32, 144, 32);
-  overflow: hidden;
+  border: solid var(--darkgreen);
+  box-shadow: inset 1px 1px 10px  var(--darkgreen);
+  cursor: pointer;
 }
 
-.buttonText {
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-}
 
 .forgotPasswordText,
 .newAccount {
   color: white;
   margin-top: 10px;
   text-decoration-line: underline;
-  cursor: pointer;
 }
