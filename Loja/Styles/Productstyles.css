@@ -36,8 +36,17 @@ body{
     max-height: 70%;
     border: solid rgb(150, 150, 150) .7px;
 }
+    .container{
+        display: flex;
+        position: absolute;
+        top:0;
+        
+        
+    }
+
 
 .box{
+
     display: flex;
     vertical-align: baseline;
 }
@@ -122,4 +131,29 @@ label.price{
 
     width: 240px;
     transition: 0.3s;
+}
+.Jlogin{
+    
+    height: 50px;
+    width: 10px;
+   top: 100;
+    left:0;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: var(--WT);
+    z-index: 999;
+}
+.modal{
+    justify-content: center ;
+    display: flex;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    box-shadow: 2px 2px 10px black;
+    background-color: rgb(226, 226, 226);
+    z-index: 999;
+    backdrop-filter:blur(10px);
 }

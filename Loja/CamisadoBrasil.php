@@ -1,7 +1,4 @@
-<?php 
-    session_start(); 
-    include("conexao.php");
-?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -12,6 +9,17 @@
     <title> </title>
 </head>
 <body>
+<div class= "Janela-login" id=Jlogin>
+        <div class= "modal">
+            <input type= "text" placeholder="Email"></input>
+            <input type="password" placeholder="Senha"></input>
+            <input type="button"></input>
+            <a href="#">não possuí uma conta?</a>
+        </div>
+
+    </div>
+
+
     <div class= "navbar">
     <a draggable ="false"  href="index.php"><img draggable ="false" src="../hip.png" ></a>
     </div>
@@ -22,11 +30,9 @@
 
         <div class="sq"><b><label class="price">R$149,99<label></b>
        <input type="button" value="COMPRAR"></input></div>
-</div>
-    <div class= "product">
-        
 
-    </div>
+</div>
+ 
 </div>
 
 </body>
