@@ -82,7 +82,7 @@ input[type="password"]{
   font-family: 'Candara', sans-serif;
 }
 
-input[type="button"] {
+button {
   color: white;
   display: flex;
   align-items: center;

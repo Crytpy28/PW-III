@@ -11,10 +11,12 @@
 <body>
 <div class= "Janela-login" id=Jlogin>
         <div class= "modal">
-            <input type= "text" placeholder="Email"></input>
-            <input type="password" placeholder="Senha"></input>
-            <input type="button"></input>
-            <a href="#">não possuí uma conta?</a>
+            <button class="fechar" id="fechar">x</button>
+            <label class="title"> Entre agora para comprar este produto</label>
+            <input type= "text" placeholder="Email" id="EM"></input>
+            <input type="password" placeholder="Senha" id="PS"></input>
+            <input type="button" value="entrar"></input>
+            <a href="cadastro.php" id="conta">não possuí uma conta?</a>
         </div>
 
     </div>
@@ -29,11 +31,12 @@
     <p>Lorem ipsum dolor hic lsdasd jaksjdoajskda asjdkajs asdaj sdqiw sdas jfdf kxvnmm das uwl</p></div>
 
         <div class="sq"><b><label class="price">R$149,99<label></b>
-       <input type="button" value="COMPRAR"></input></div>
+       <input onclick="abrirModal()" type="button" value="COMPRAR"></input></div>
 
 </div>
  
 </div>
 
+<script src="JavaScript/ModalJS.js"></script>
 </body>
 </html>

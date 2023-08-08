@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="navbar">
-       <img src="../hip.png">
+    <a draggable ="false"  href="index.php"><img draggable ="false" src="../hip.png" ></a>
     <text>
         <a href="login.php">
         <?php

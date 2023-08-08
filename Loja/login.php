@@ -7,7 +7,8 @@
 <body>
  <img draggable="false"src="../stadium.png">
 
-<div class="navbar"><img src="../hip.png">
+<div class="navbar"> 
+  <a draggable ="false" href="index.php"><img draggable ="false" src="../hip.png" ></a>
   <div class="container">
     <div class="content">
       <div class="title">Login</div>
