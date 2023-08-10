@@ -15,7 +15,7 @@
     <text>
         <a href="login.php">
         <?php
-            echo "Faça login"
+            echo "<h3>Faça Login</h3>"
         ?></a>
     </text>
     </div>

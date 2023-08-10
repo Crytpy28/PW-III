@@ -12,7 +12,7 @@
 <div class= "Janela-login" id=Jlogin>
         <div class= "modal">
             <button class="fechar" id="fechar">x</button>
-            <label class="title"> Entre agora para comprar este produto</label>
+            <label class="title">Entre agora para comprar este produto</label>
             <input type= "text" placeholder="Email" id="EM"></input>
             <input type="password" placeholder="Senha" id="PS"></input>
             <input type="button" value="entrar"></input>
