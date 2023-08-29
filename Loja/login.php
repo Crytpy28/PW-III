@@ -1,33 +1,3 @@
-<?php
-include("conexao.php");
-
-if(isset ($_POST["Email"])||isset($_POST["Senha"])){
-
-    
-    $Email = $mysqli->real_escape_string($_POST['Email']);
-    $Senha = $mysqli->real_escape_string($_POST['Senha']);
-
-    $sql_code ="SELECT * from loja where Email ='$Email' AND Senha = '$Senha' ";
-    $sql_query = $mysqli->query($sql_code) or die("Error on sql ". $mysqli->error);
-
-    $quantidade = $sql_query->num_rows;
-    if($quantidade == 1){
-
-        $usuario =$sql_query->fetch_assoc();
-
-        if  (!isset($_SESSION)){
-            session_start();
-        }
-        $_SESSION['Email'] = $usuario['Email'];
-
-        header("Location: index.php");
-    } else{
-        echo "Error";
-    }
-}
- 
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,6 +14,7 @@ if(isset ($_POST["Email"])||isset($_POST["Senha"])){
 
  <img draggable="false"src="../stadium.png">
 
+ <form action="logarCheck.php" method=POST>
 <div class="navbar"> 
   <a draggable ="false" href="index.php"><img draggable ="false" src="../hip.png" ></a>
   <div class="container">
@@ -57,6 +28,7 @@ if(isset ($_POST["Email"])||isset($_POST["Senha"])){
 
       <div class="forgotPasswordText">Esqueceu sua senha?</div>
       <div class="newAccount">Ainda não tem conta?</div>
+              </form>
     </div>
   </div>
 </body>

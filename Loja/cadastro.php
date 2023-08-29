@@ -17,9 +17,9 @@ include('conexao.php');
     <div class="content">
       <div class="title">Sign-up</div>
       <form action="inserir.php" method=POST>
-      <input class="Nome" type="text" placeholder="Nome completo"></input>
-      <input class="Email" type="text" placeholder="Email"></input>
-      <input class="Senha" type="password" placeholder="Senha"></input>
+      <input class="Nome" type="text" placeholder="Nome completo" name="Nome"></input>
+      <input class="Email" type="text" placeholder="Email" name="Email"></input>
+      <input class="Senha" type="password" placeholder="Senha" name="Senha"></input>
 
       <button type="submit" name="Cadastro" value="&#10150;"></button>
 </form>

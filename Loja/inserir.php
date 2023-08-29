@@ -7,11 +7,10 @@
     $Senha = $_POST['Senha'];
 
 
-    $inserir = $mysqli->prepare("insert into loja (Nome,Email,Senha)
+    $inserir = $pdo->prepare("insert into loja (Nome,Email,Senha)
                      values ('$Nome','$Email','$Senha')");
     $inserir->execute();
-
-    header("location:index.php");
-
+    setcookie("Email",$Email);
+    header("Location: index.php");
 
 ?>

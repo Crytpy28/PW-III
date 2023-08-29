@@ -17,7 +17,15 @@ include("conexao.php");
     <text>
         <a href="login.php">
         <?php
-            echo "<h3>Faça Login</h3>"
+        $Email_cookie = $_COOKIE['Email'];
+        if(isset($Email_cookie)){
+          echo"Bem-Vindo, $Email_cookie <br>";
+          echo"Essas informações <font color='red'>PODEM</font> ser acessadas por você";
+        }else{
+          echo"Bem-Vindo, $Email_cookie <br>";
+          echo"Essas informações <font color='red'>NÃO PODEM</font> ser acessadas por você";
+          echo"<br><a href='login.html'>Faça Login</a> Para ler o conteúdo";
+        }
         ?></a>
     </text>
     </div>

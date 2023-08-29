@@ -31,8 +31,9 @@
     <p>Lorem ipsum dolor hic lsdasd jaksjdoajskda asjdkajs asdaj sdqiw sdas jfdf kxvnmm das uwl</p></div>
 
         <div class="sq"><b><label class="price">R$149,99<label></b>
-       <input onclick="abrirModal()" type="button" value="COMPRAR"></input></div>
-
+        <form action="verifica.php" method=POST>
+       <input type="submit" value="COMPRAR"></input></div>
+</form>
 </div>
  
 </div>
