@@ -1,5 +1,6 @@
 <?php
 include("conexao.php");
+$Email_cookie = $_COOKIE['Email'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -17,21 +18,34 @@ include("conexao.php");
     <text>
         
         <?php
-        $Email_cookie = $_COOKIE['Email'];
+        
+
         if(isset($Email_cookie)){
           echo"Bem-vindo $Email_cookie <br>";
           
         }else{
-          echo"Bem-vindo $Email_cookie <br>";
-          echo"<br><a href='login.php'>Faça Login</a>" ;
-        }
+
+          echo" 
+          <div class='dropdown'>
+          <button class='dropbtn'>Faça login ou cadastre-se</button>
+          <div class='dropdown-content'>
+            <a class='drop' href='login.php'>Link 1</a>
+            <a class='drop' href='cadastro.php'>Link 2</a>
+          </div>
+        </div>";
+          
+        } 
+        
         ?>
     </text>
     </div>
+    
     <div class ="container">
+     
     <a href="CamisadoBrasil.php" class="item -item1"> <img src="../Brazil.png"><h4>Camisa do Brasil Masculina</h4></a>
         <a href="CamisadaFranca.php" class="item -item2"><img src="../Franca.png"><h4>Camisa da França Masculina</h4></a>
         <a href="CamisadaHolanda.php" class="item -item3"><img src="../Holanda.png"><h4>Camisa da Holanda Masculina</h4></a>
+        
     </div>
     
 </body>
