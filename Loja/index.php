@@ -15,24 +15,23 @@ include("conexao.php");
     <div class="navbar">
     <a draggable ="false"  href="index.php"><img draggable ="false" src="../hip.png" ></a>
     <text>
-        <a href="login.php">
+        
         <?php
         $Email_cookie = $_COOKIE['Email'];
         if(isset($Email_cookie)){
-          echo"Bem-Vindo, $Email_cookie <br>";
-          echo"Essas informações <font color='red'>PODEM</font> ser acessadas por você";
+          echo"Bem-vindo $Email_cookie <br>";
+          
         }else{
-          echo"Bem-Vindo, $Email_cookie <br>";
-          echo"Essas informações <font color='red'>NÃO PODEM</font> ser acessadas por você";
-          echo"<br><a href='login.html'>Faça Login</a> Para ler o conteúdo";
+          echo"Bem-vindo $Email_cookie <br>";
+          echo"<br><a href='login.php'>Faça Login</a>" ;
         }
-        ?></a>
+        ?>
     </text>
     </div>
     <div class ="container">
-        <a href="CamisadoBrasil.php" class="item -item1"> <img src="../Brazil.png"><h4>Camisa do Brasil masculina</h4></a>
-        <a href="#" class="item -item2"><img src="../franca.png"><h4>Camisa da França unisex</h4></a>
-        <a href="#" class="item -item3"><img src="../holanda.png"><h4>Camisa da Holanda masculina</h4></a>
+    <a href="CamisadoBrasil.php" class="item -item1"> <img src="../Brazil.png"><h4>Camisa do Brasil Masculina</h4></a>
+        <a href="CamisadaFranca.php" class="item -item2"><img src="../Franca.png"><h4>Camisa da França Masculina</h4></a>
+        <a href="CamisadaHolanda.php" class="item -item3"><img src="../Holanda.png"><h4>Camisa da Holanda Masculina</h4></a>
     </div>
     
 </body>

@@ -2,12 +2,11 @@
     --green: rgb(32, 144, 32);
     --darkgreen: rgb(24, 96, 24);
     --BL: rgb(24, 24, 24);
+    --FontPd: 'Trebuchet MS', sans-serif;
 }
 
 body{
     background-color: var(--BL);
-    background-position: center;
-    background-size: cover;
 }
 
 .navbar{
@@ -20,6 +19,7 @@ body{
     height: 8em;
     background-color: var(--green);
     background-image: linear-gradient(to bottom right, var(--darkgreen), var(--green));
+
 }
 
 .navbar img{
@@ -29,11 +29,12 @@ body{
 
 .navbar text{
     color: white;
-    float: right;
+    font-family: var(--FontPd);
+    
 }
     
 h3{
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: var(--FontPd);
     color: white;
     font-size: 2vw;
     margin-right: 2vw;
@@ -50,10 +51,11 @@ h3{
 .-item1,
 .-item2,
 .-item3{
-    width: 20vw;
-    height: 30vw;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 1vw;
+    width: 15vw;
+    height: 25vw;
+    padding: 2.5vw;
+    font-family: var(--FontPd);
+    font-size: 1.5vw;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
     border-radius: 5%;
     box-shadow: 5px 10px 10px black;
@@ -66,12 +68,9 @@ h3{
 .-item1:hover,
 .-item2:hover,
 .-item3:hover{
-    width: 18vw;
-    height: 27vw;
-    font-size: 0.9vw;
     box-shadow: 0px 0px 10px rgb(191, 191, 191);
-   
 }
+
  .-item1 img,
  .-item2 img,
  .-item3 img {
@@ -79,6 +78,16 @@ h3{
     width: 75%;
     object-fit: contain;
 }
+
+.-item1 img:hover,
+.-item2 img:hover,
+.-item3 img:hover {
+    transform: scale(1.5, 1.5);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    -moz-transition: -moz-transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
 
 a{
   text-decoration: none;
