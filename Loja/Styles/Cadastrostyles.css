@@ -1,0 +1,102 @@
+:root{
+  --green: rgb(32, 144, 32);
+  --darkgreen: rgb(24, 96, 24);
+  --BL: rgb(24, 24, 24);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(24, 24, 24);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Candara', sans-serif;
+  overflow: hidden;
+}
+
+.navbar{
+  box-shadow: 1px 1px 10px black;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1;
+  width: 30vw;
+  height: 7.5vw;
+  background-color: var(--green);
+  background-image: linear-gradient(to bottom right, var(--darkgreen), var(--green));
+  border-radius: 0 0 75% 75% / 50%;
+}
+
+.navbar img{
+  height: 100%;
+  pointer-events: none;
+}
+
+.container {
+  position: absolute;
+  text-align: center;
+  width: 30vw;
+  height: 100%;
+  background-color: rgba(24, 96, 24, 0.75);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10vw 2.5vw 0 2.5vw;
+}
+
+.title {
+  color: white;
+  font-size: 5vw;
+  margin: 2vw 0 5vw;
+}
+
+input[type="text"],
+input[type="password"]{
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 100px;
+  width: 25vw;
+  height: 2.5vw;
+  padding-top: 0.25vw;
+  padding-left: 1vw;
+  margin-bottom: 1vw;
+  font-family: 'Candara', sans-serif;
+}
+
+button {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background-color: rgb(32, 144, 32);
+  border: solid var(--darkgreen);
+  box-shadow: inset 1px 1px 10px  var(--darkgreen);
+  cursor: pointer;
+}
+
+
+.Already {
+  color: white;
+  margin-top: 10px;
+  text-decoration-line: underline;
+}
