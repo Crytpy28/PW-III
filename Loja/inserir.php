@@ -13,4 +13,10 @@
     setcookie("Email",$Email);
     header("Location: index.php");
 
+    $COMPRAR = $_POST['COMPRAR'];
+    if(isset($Email_cookie)){
+        $inserir = $pdo->prepare("insert into loja (Compra)  values ('$COMPRAR')");
+        header("Location: index.php");
+      }
+    
 ?>

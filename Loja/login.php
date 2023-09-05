@@ -11,20 +11,20 @@
     unset($_SESSION['status']);
   }
 ?>
-<img draggable="false"src="../stadium.png">
-<form action="logarCheck.php" method=POST>
-  <div class="navbar"> 
-    <a draggable ="false" href="index.php"><img draggable ="false" src="../hip.png" ></a>
-    <div class="container">
-      <div class="content">
-        <div class="title">Login</div>
+  <img draggable="false"src="../stadium.png">
+  <div class="container">
+    <div class="navbar">
+      <a href="index.php" dragable="none"><img src="../hip.png" ></a> 
+    </div>
+    <div class="content">
+    <div class="title">Login</div>
+      <form action="logarCheck.php" method=POST>
         <input class="input emailInput" type="text" placeholder="Email" name="Email"></input>
         <input class="input passwordInput" type="password" placeholder="Senha" name="Senha"></input>
-        <input type="submit" value="&#10148;"></input>
-        <a class="newAccount" href="cadastro.php">Ainda não tem conta?</div>
-      </div>
+        <button type="submit" value="&#10148;"></button>
+        <a class="Already" href="cadastro.php">Ainda não tem conta?</a>
+      </form>
     </div>
   </div>
-</form>
 </body>
 </html>

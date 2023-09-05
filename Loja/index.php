@@ -21,6 +21,7 @@
     <a draggable ="false"  href="index.php"><img draggable ="false" src="../hip.png" ></a>
       <?php
         if(isset($Email_cookie)){
+          
           echo"Bem-vindo $Email_cookie <br>";
         }else{
         echo" 
@@ -41,25 +42,18 @@
   </div>
   <footer>
     <div class="footer">
-    <div class="row">
-    <a href="#"><i class="fa fa-facebook"></i></a>
-    <a href="#"><i class="fa fa-instagram"></i></a>
-    <a href="#"><i class="fa fa-youtube"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    </div>
 
     <div class="row">
     <ul>
-    <li><a href="#">Contact us</a></li>
-    <li><a href="#">Our Services</a></li>
-    <li><a href="#">Privacy Policy</a></li>
-    <li><a href="#">Terms & Conditions</a></li>
-    <li><a href="#">Career</a></li>
+    <li><a href="#">Contate-nos</a></li>
+    <li><a href="#">Nossos serviços</a></li>
+    <li><a href="#">Política de Privacidade</a></li>
+    <li><a href="#">Termos e Condições</a></li>
     </ul>
     </div>
 
     <div class="row">
-    INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh 
+    DIREITOS A NOIS MESMO 
     </div>
     </div>
   </footer>

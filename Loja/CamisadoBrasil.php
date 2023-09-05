@@ -1,3 +1,8 @@
+<?php
+    include('Conexao.php');
+    $Email_cookie = $_COOKIE['Email'];
+    $COMPRAR = $_POST['COMPRAR'];
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -19,7 +24,23 @@
         </div>
     </div>
     <div class= "navbar">
+        
         <a draggable ="false"  href="index.php"><img draggable ="false" src="../hip.png" ></a>
+        <?php
+        if(isset($Email_cookie)){
+          
+          echo"Bem-vindo $Email_cookie <br>";
+        }else{
+        echo" 
+          <div class='dropdown'>
+            <button class='dropbtn'>Faça login ou cadastre-se</button>
+            <div class='dropdown-content'>
+              <a class='drop' href='login.php'>Login</a>
+              <a class='drop' href='cadastro.php'> Cadastre-se</a>
+            </div>
+          </div>";
+        } 
+      ?>
     </div>
     <div class="container">
         <div class="box"> 
@@ -34,11 +55,30 @@
                 Ajuste Padrão: A camisa possui um ajuste padrão que proporciona uma sensação relaxada e fácil durante o uso.
                 Material: Feita de 100% poliéster.<br></p>
             </div>
+            <form action="" method="post">
             <div class="sq"><b><label class="price">R$149,99<label></b>
                 <input type="submit" value="COMPRAR"></input>
+    </form>
             </div>
         </div>
     </div>
     <script src="JavaScript/ModalJS.js"></script>
+    <footer>
+        <div class="footer">
+
+        <div class="row">
+        <ul>
+        <li><a href="#">Contate-nos</a></li>
+        <li><a href="#">Nossos serviços</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Termos e Condições</a></li>
+        </ul>
+        </div>
+
+        <div class="row">
+        DIREITOS A NOIS MESMO 
+        </div>
+        </div>
+  </footer>
 </body>
 </html>
