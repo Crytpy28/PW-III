@@ -1,7 +1,9 @@
 <?php
     include('Conexao.php');
     $Email_cookie = $_COOKIE['Email'];
-    $COMPRAR = $_POST['COMPRAR'];
+    $NomePro = ['Camisa do Brasil'];
+    $Preco = ['149,99'];
+    
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -39,7 +41,8 @@
               <a class='drop' href='cadastro.php'> Cadastre-se</a>
             </div>
           </div>";
-        } 
+        }
+   
       ?>
     </div>
     <div class="container">
@@ -55,7 +58,7 @@
                 Ajuste Padrão: A camisa possui um ajuste padrão que proporciona uma sensação relaxada e fácil durante o uso.
                 Material: Feita de 100% poliéster.<br></p>
             </div>
-            <form action="" method="post">
+            <form action="inserir.php" method="post">
             <div class="sq"><b><label class="price">R$149,99<label></b>
                 <input type="submit" value="COMPRAR"></input>
     </form>
